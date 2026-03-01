@@ -16,14 +16,14 @@ https://Una539.github.io/Clock-leptos/
 
 安装依赖：
 
-​```bash
+​```
 rustup target add wasm32-unknown-unknown
 cargo install trunk
 ​```
 
 启动开发服务器：
 
-​```bash
+​```
 trunk serve
 ​```
 
@@ -31,7 +31,7 @@ trunk serve
 
 ## 构建
 
-​```bash
+​```
 trunk build --release --public-url /Clock-leptos/
 ​```
 
