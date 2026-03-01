@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leptos 时钟</title>
+<link rel="modulepreload" href="/Clock-leptos/leptos-clock-88a10ae4c75a800d.js" crossorigin="anonymous" integrity="sha384-e3FUnoJQotlNIjUj1RgK4KfAGCCQHC05G2nNiRODStRfmIxcfmxZXV//5xKDeFbc"><link rel="preload" href="/Clock-leptos/leptos-clock-88a10ae4c75a800d_bg.wasm" crossorigin="anonymous" integrity="sha384-XvpUsxkdBCulGDJeOGTS2/slb6MqUDTZkIEzaynqyr2mjYZuTlJIEmSIGyua5D1S" as="fetch" type="application/wasm"></head>
+<body>
+    <!-- trunk 会自动注入编译好的 WASM JS -->
+
+<script type="module">
+import init, * as bindings from '/Clock-leptos/leptos-clock-88a10ae4c75a800d.js';
+const wasm = await init({ module_or_path: '/Clock-leptos/leptos-clock-88a10ae4c75a800d_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
